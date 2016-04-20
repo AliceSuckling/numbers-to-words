@@ -17,6 +17,7 @@
     "path": "^0.4.9"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "connect-modrewrite": "^0.7.9",
     "es5-shim": "^4.0.1",
     "grunt": "^0.4.5",
@@ -24,6 +25,13 @@
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-hapi": "^0.8.1"
+    "grunt-hapi": "^0.8.1",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.7"
   }
 }
