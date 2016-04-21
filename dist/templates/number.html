@@ -1,9 +1,10 @@
 
-<h1>Numbers to Words</h1>
-<p>Enter a number between 0 and 1000...</p>
+<h1>Numbers to Space Invaders</h1>
+
 
 <div class="container">
   <input type="text" id="number" ng-model="input" ng-bind="number.convert()"/>
 </div>
-<div class="{{ number.validInput() }}" id="reply" ng-model="output">{{ output }}</div>
+<div id="reply" ng-model="output">{{ output }}</div>
+<!-- <div class="{{ number.validInput() }}" id="reply" ng-model="output">{{ output }}</div> -->
 <img ng-repeat="imageNumber in number.image() track by $index" src="/assets/images/spaceinvader.png" id="replyImage" ng-model="imageNumber">

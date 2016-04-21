@@ -48,6 +48,18 @@
       if (stringOfNumbers == 100) {
         return 'One hundred';
       }
+      //validation - nothing
+      if ( stringOfNumbers == null || stringOfNumbers == " " || stringOfNumbers < 0 || stringOfNumbers == 0) {
+        return 'enter a number between 0 and 1000';
+      }
+      //validation -value is not between 0 and 1000
+      if ( stringOfNumbers > 1000 ) {
+        return "arrr! There's too many!"
+      }
+      //validation -check there are no letter
+      if ( stringOfNumbers.match(/[a-z]/i)) {
+        return 'There are ghosts in the machine. We need numbers to win this battle!';
+      }
 
       return translate(parseInt(stringOfNumbers));
     }
@@ -55,25 +67,6 @@
     ctrl.convert = function() {
       var stringOfNumbers = $scope.input;
       $scope.output = process(stringOfNumbers);
-    }
-
-    ctrl.validate = function() {
-      var stringOfNumbers = $scope.input;
-      //no value entered
-      if ( stringOfNumbers == null || stringOfNumbers == " ") {
-        alert("please enter a value");
-        return false;
-      }
-      //value is not between 0 and 1000
-      if ( stringOfNumbers > 1000 || stringOfNumbers < 0) {
-        alert("please enter a number between 0 and 1000");
-        return false;
-      }
-      //check there are no letter
-      if ( stringOfNumbers.match(/[a-z]/i)) {
-        alert("please enter a number value");
-        return false;
-      }
     }
 
     ctrl.image = function() {
