@@ -69,6 +69,22 @@
         alert("please enter a number between 0 and 1000");
         return false;
       }
+      //check there are no letter
+      if ( stringOfNumbers.match(/[a-z]/i)) {
+        alert("please enter a number value");
+        return false;
+      }
+    }
+
+    ctrl.image = function() {
+      var imageNumber = parseInt($scope.input);
+
+      if (imageNumber > 0) {
+        count = new Array(imageNumber);
+      } else {
+        count = null;
+      }
+      return count;
     }
   }
 

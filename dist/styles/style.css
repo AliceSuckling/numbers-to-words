@@ -14,7 +14,7 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 #enter:hover {
@@ -28,6 +28,7 @@ body {
   padding-left: 120px;
 }
 
-#image {
-
+#replyImage {
+  padding: 0px;
+  padding-left: 0px;
 }
