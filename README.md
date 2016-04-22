@@ -1,6 +1,7 @@
 ##Numbers to Words
 Translates a number from 0 - 1000 and turns it into the english word equivalent.
 
+![Output sample] (https://github.com/HocusPocus2015/numbers-to-words/blob/master/app/assets/images/numbersToWords.gif) 
 
 ####Configuration Notes
 
