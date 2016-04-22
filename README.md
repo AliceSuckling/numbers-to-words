@@ -21,3 +21,9 @@ A list of the Grunt plugins in this application. |
 [Grunt copy](https://github.com/gruntjs/grunt-contrib-copy) copies files from development folders and puts them in the folder that will be served with the frontend of your application. |
 [Grunt clean](https://github.com/gruntjs/grunt-contrib-clean) "cleans" or removes all files in the distribution folder (`dist`) so that logic in stylesheets, templates, or scripts isn't accidentally overridden by previous code in the directory. |
 [Grunt Hapi](https://github.com/athieriot/grunt-hapi) runs a server using [`HapiJS`](http://hapijs.com/). Happy is a Node web application framework with robust configuration options. |
+
+Karma and Mocha were used for AngularJS testing, using [this](http://bendetat.com/karma-and-mocha-for-angular-testing.html) resource. 
+Run the tests with:
+````
+$ karma start
+````
